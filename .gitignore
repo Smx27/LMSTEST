@@ -479,3 +479,7 @@ $RECYCLE.BIN/
 LMS/bin
 LMS/obj
 .vscode
+UI/.angular
+LMS/App.db
+LMS/App.db-shm
+LMS/App.db-wal

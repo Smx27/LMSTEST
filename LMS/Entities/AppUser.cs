@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace LMS.Entities
 {
-    public class AppUser : IdentityUser
+    public class AppUser : IdentityUser<int>
     {
         public DateOnly DateOfBirth { get; set; }
         public DateTime Created { get; set; } = DateTime.UtcNow;
@@ -15,7 +15,7 @@ namespace LMS.Entities
         public string City { get; set; }
         public string Country { get; set; }
         public string Zipcode { get; set; }
-        public ICollection<AppUserRole> UserRoles { get; set; }
+        
 
     }
 }

@@ -24,6 +24,8 @@ import { DeactivateComponent } from './Pages/student/deactivate/deactivate.compo
 import { StudentSidebarComponent } from './Pages/student/student-sidebar/student-sidebar.component';
 import { NavMainComponent } from './Pages/Template/nav-main/nav-main.component';
 import { NavLoginStatusComponent } from './Pages/Template/nav-login-status/nav-login-status.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { NavLoginStatusComponent } from './Pages/Template/nav-login-status/nav-l
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
